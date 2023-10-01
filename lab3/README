@@ -1,0 +1,23 @@
+1. Summary of what was Accomplished:
+In this lab, 2 sorting algorothims were implemented-Insertion Sort and Merge Sort. Each of these use have differing comlexities for which analysis was made easy by the the use of "metrics" methods which allowed for tracking the 3 operations: copy, swap, and finally the most intensive: comparison.
+
+Shortcomings: A bug that could not be resolved was causing mergeSort to function inconsitently, infact, typically failing for a given set of numbers-wether there are an even number or odd number of integers. My best estimate is that there is a flaw in the merge function which was somewhat already tricky to design. Next time, better documentation (i.e comments at each line of code) may be utilized to avoid errors.
+
+
+2.Analysis of Sorting Algorithms: 
+The following includes the best-, average-, and worst-case scenarios for InsertionSort and MergeSort for 5 values.
+
+Insertion Sort:
+	Best Case: [1,2,3,4,5] -or any other combination of 5 integers that are already sorted in the required ascending order. Time complexity is Omega(n).
+		Comparisons: 4	
+		Swaps: 0
+		Copy operations: 5
+
+	Worst Case: [5,4,3,2,1] -or any other Combination of 5 integers that are in the descending order. Time complexity is Omega(n^2).
+		Comparisons: 10
+		Swaps: 10
+		Copy operations: 5
+
+
+Merge Sort: 
+	Best/Worst/Average-Case: -Merge Sort has a binary tree and therefore has the same complexity for all combinations. It's time complexity is O(n*log(n)).
